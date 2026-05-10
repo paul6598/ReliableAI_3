@@ -1,0 +1,4 @@
+cmake==4.3.2
+maraboupy==2.0.0
+numpy==2.4.4
+packaging==26.0
