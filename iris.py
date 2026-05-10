@@ -39,7 +39,7 @@ for epoch in range(100):
     optimizer.step()
 
 
-path = "resources/nnet/iris"
+path = "resources/onnx/iris"
 if not os.path.exists(path):
     os.makedirs(path)
 torch.onnx.export(model, torch.randn(1, 4), os.path.join(path, "iris_model.onnx"))
