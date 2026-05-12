@@ -41,10 +41,11 @@ def main():
     X, y = iris.data, iris.target
 
     # 2. 테스트할 샘플 및 마진(epsilon) 설정
+    epsilon = 0.8
     sample_idx = 0  # 첫 번째 샘플 사용
     x_test = X[sample_idx]
     y_test = y[sample_idx]
-    epsilon = 0.0005 
+    
 
     print(f"--- 검증 시작 ---")
     print(f"샘플 인덱스: {sample_idx}")
